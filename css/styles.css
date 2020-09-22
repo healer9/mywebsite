@@ -12,6 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Poppins", sans-serif;
   height: 15vh;
 }
 
@@ -48,14 +49,146 @@ li {
 }
 
 .burger div {
-  width: 25px;
+  width: 30px;
   height: 3px;
   background-color: #fdfdfd;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 900px) {
+/* home-section */
+#home {
+  background-image: url(/files/images/HOME.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 85vh;
+  padding-top: 5%;
+}
+
+.greet {
+  margin: 2% 0%;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  font-family: "Raleway", sans-serif;
+}
+
+.social-media {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+.fab {
+  font-size: 2.5rem;
+  color: #00b7c2;
+}
+
+.social-logo a i:hover {
+  color: #fafafa;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 3em;
+  font-family: "Raleway", sans-serif;
+  color: #00b7cf;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #00b7c2;
+  color: #fafafa;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fdfdfd;
+  font-family: "Raleway", sans-serif;
+  padding: 0% 3%;
+  position: relative;
+}
+
+.check {
+  margin-top: 5%;
+  z-index: 10;
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+  animation-name: preloader;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 170px 170px;
+  will-change: transform;
+}
+
+.line {
+  stroke-width: 3;
+}
+
+.reactor {
+  max-width: 50rem;
+  width: 50%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-left: 25%;
+  width: 50%;
+}
+
+svg {
+  opacity: 0.3;
+}
+
+circle:nth-of-type(1) {
+  stroke-dasharray: 1000px;
+  animation-delay: -0.15s;
+}
+
+circle:nth-of-type(2) {
+  stroke-dasharray: 200px;
+  animation-delay: -0.3s;
+}
+
+circle:nth-of-type(3) {
+  stroke-dasharray: 500px;
+  animation-delay: -0.45s;
+}
+
+circle:nth-of-type(4) {
+  stroke-dasharray: 300px;
+  animation-delay: -0.6s;
+}
+
+circle:nth-of-type(5) {
+  stroke-dasharray: 100px;
+  animation-delay: -0.15s;
+}
+
+circle:nth-of-type(6) {
+  stroke-dasharray: 150px;
+  animation-delay: -0.6s;
+}
+
+@keyframes preloader {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
@@ -79,6 +212,7 @@ li {
     width: 80%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 1000;
   }
 
   .nav-links li {
@@ -91,6 +225,40 @@ li {
 
   .burger {
     display: block;
+  }
+
+  /* home-section mobile */
+  .intro-container {
+    margin-top: 35%;
+  }
+
+  .greet {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    margin-top: 5%;
+    font-size: 1.7rem;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .social-media {
+    margin-top: 20%;
+    max-width: 100%;
+    z-index: 100;
+  }
+
+  .fab {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    margin-top: -5%;
+    margin-left: -5%;
+    width: 100%;
   }
 }
 
