@@ -23,10 +23,10 @@
         <img src="./images/logo.png" alt="" />
       </div>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="/">Project</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div class="burger">
@@ -92,6 +92,123 @@
         </div>
       </div>
     </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="about-head">
+        <h1>about</h1>
+      </div>
+
+      <!-- introduction -->
+      <div class="intro-content">
+        <div class="intro-text">
+          <p class="essay">
+            Hii I'm Anas Riyaz. Student by Profession and creative by nature.
+            Currently I'm pursuing my Bachelors in
+            <span class="course">Computer Engineering</span>. I have a keen
+            interset in <span class="course">learning & working</span> with new
+            technologies. I love to Design Responsive, Interactive & User
+            friendly websites in very efficient manner. I also like to solve
+            competitive coding problems to enhance my thinking skills.
+          </p>
+        </div>
+        <div class="hero">
+          <img class="my left" src="./images/left-half.png" alt="" />
+          <img class="my right" src="./images/right-half.png" alt="" />
+        </div>
+      </div>
+
+      <!-- resume-link -->
+      <div class="btn">
+        <button><a href="">Resume</a></button>
+      </div>
+    </section>
+
+    <!-- tech section -->
+    <section class="tech">
+      <h3 class="tech-head">Technologies</h3>
+
+      <p class="tech-desc">That I love, to work with IT.</p>
+
+      <div class="grid-container">
+        <div class="tech-logo"><i class="fab fa-react t"></i></div>
+        <div class="tech-logo"><i class="fab fa-node t"></i></div>
+        <div class="tech-logo"><i class="fab fa-js-square t"></i></div>
+        <div class="tech-logo"><i class="fab fa-git-alt t"></i></div>
+        <div class="tech-logo"><i class="fab fa-aws t"></i></div>
+        <div class="tech-logo"><i class="fab fa-bootstrap t"></i></div>
+      </div>
+    </section>
+
+    <!-- contact-section -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form
+          action="mailto:anasriyaz92@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="fname" required="required" />
+                <span class="text">First Name</span>
+                <span class="line"></span>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="lname" required="required" />
+                <span class="text">Last Name</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="email" required="required" />
+                <span class="text">Email</span>
+                <span class="line"></span>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="mobile" required="required" />
+                <span class="text">Mobile</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox textarea">
+                <textarea required="required" name="message"></textarea>
+                <span class="text">Message</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <h3>Copyright &copy; Anas Riyaz 2020</h3>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
