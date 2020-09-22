@@ -58,7 +58,7 @@ li {
 
 /* home-section */
 #home {
-  background-image: url(/files/images/HOME.png);
+  background-image: url("../images/HOME.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
