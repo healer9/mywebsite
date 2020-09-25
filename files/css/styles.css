@@ -87,7 +87,7 @@ li {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
+  max-width: 20%;
 }
 
 .fab {
@@ -603,6 +603,11 @@ footer {
     margin-bottom: 5%;
 
     font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    letter-spacing: 0rem;
   }
 }
 

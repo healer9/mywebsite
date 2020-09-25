@@ -1,3 +1,10 @@
+window.location.replace("#");
+
+// slice off the remaining '#' in HTML5
+if (typeof window.history.replaceState == "function") {
+  history.replaceState({}, "", window.location.href.slice(0, -1));
+}
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
@@ -36,3 +43,8 @@ function scrollAppear() {
 }
 
 window.addEventListener("scroll", scrollAppear);
+
+// Dynamic Year
+const year = document.getElementById("year");
+
+year.innerHTML = new Date().getFullYear();
