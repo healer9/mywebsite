@@ -310,6 +310,7 @@ button a:hover {
   margin-bottom: 5%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
   color: #00b7c2;
 }
 
