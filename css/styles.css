@@ -107,7 +107,7 @@ h1 {
   color: #00b7cf;
 }
 
-.txt-type > .txt {
+.txt-type>.txt {
   border-right: 0.2rem solid #00b7c2;
   color: #fafafa;
 }
@@ -414,8 +414,8 @@ button a:hover {
   pointer-events: none;
 }
 
-.contact-container .row100 .inputBox input:focus + .text,
-.contact-container .row100 .inputBox input:valid + .text {
+.contact-container .row100 .inputBox input:focus+.text,
+.contact-container .row100 .inputBox input:valid+.text {
   top: -35px;
   left: -10px;
 }
@@ -432,8 +432,8 @@ button a:hover {
   pointer-events: none;
 }
 
-.contact-container .row100 .inputBox input:focus ~ .line,
-.contact-container .row100 .inputBox input:valid ~ .line {
+.contact-container .row100 .inputBox input:focus~.line,
+.contact-container .row100 .inputBox input:valid~.line {
   height: 100%;
 }
 
@@ -449,14 +449,14 @@ button a:hover {
   resize: none;
 }
 
-.contact-container .row100 .inputBox textarea:focus + .text,
-.contact-container .row100 .inputBox textarea:valid + .text {
+.contact-container .row100 .inputBox textarea:focus+.text,
+.contact-container .row100 .inputBox textarea:valid+.text {
   top: -35px;
   left: -10px;
 }
 
-.contact-container .row100 .inputBox textarea:focus ~ .line,
-.contact-container .row100 .inputBox textarea:valid ~ .line {
+.contact-container .row100 .inputBox textarea:focus~.line,
+.contact-container .row100 .inputBox textarea:valid~.line {
   height: 100%;
 }
 
@@ -485,9 +485,19 @@ footer {
 }
 
 /* ========================Mobile and tab view ======================= */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
+  }
+
+  #home {
+    background-image: url("../images/mobile-home1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85vh;
+    margin-top: 15vh;
+    padding-top: 5%;
   }
 
   .logo img {
@@ -566,7 +576,6 @@ footer {
 
   .intro-text {
     width: 100%;
-    text-align: center;
   }
 
   .essay {
@@ -638,4 +647,10 @@ footer {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media screen and (max-width: 700px) {
+  .intro-container {
+    margin-top: 50%;
+  }
 }
